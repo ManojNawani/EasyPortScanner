@@ -11,12 +11,12 @@ host = raw_input("[*]Please Enter The Host To Scan:")
 port = int(raw_input("[*]Please Enter The Port To Scan:"))
 
 def portscanner(port):
-    if sock.connect_ex((host,port)):
+    if mysock.connect_ex((host,port)):
         print "Port %d is Closed" % (port)
     else:
         print "Port %d is Open" % (port)
 
-#portscanner(port)
+portscanner(port)
 
 
 # We Define port scanner and if there is an error received
