@@ -7,8 +7,8 @@ mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #socket.AF_INET is for the IP_Address ipv4
 #SOCK_STREAM is for TCP
 
-host = "10.1.1.1"
-port = 443
+host = raw_input("[*]Please Enter The Host To Scan:")
+port = (int(raw_input("[*]Please Enter The Port To Scan:"))
 
 def portscanner(port):
     if sock.connect_ex((host,port)):
@@ -16,7 +16,7 @@ def portscanner(port):
     else:
         print "Port %d is Open" % (port)
 
-portscanner(port)
+#portscanner(port)
 
 
 # We Define port scanner and if there is an error received
