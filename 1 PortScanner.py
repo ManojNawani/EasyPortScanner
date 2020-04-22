@@ -8,7 +8,7 @@ mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 #SOCK_STREAM is for TCP
 
 host = raw_input("[*]Please Enter The Host To Scan:")
-port = (int(raw_input("[*]Please Enter The Port To Scan:"))
+port = int(raw_input("[*]Please Enter The Port To Scan:"))
 
 def portscanner(port):
     if sock.connect_ex((host,port)):
